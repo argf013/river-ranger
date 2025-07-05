@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'React PWA Template',
-        short_name: 'React PWA',
-        description: 'A React PWA Template',
+        name: 'River Ranger',
+        short_name: 'River Ranger',
+        description: 'River Ranger Jakarta adalah komunitas lingkungan di bantaran Sungai Ciliwung yang mengedukasi anak-anak dan dewasa untuk mencintai dan merawat alam.A React PWA Template',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',

@@ -9,6 +9,7 @@ import ErrorBoundary from '../components/ErrorBoundary';
 // Lazy loaded pages for better performance
 const Home = lazy(() => import('../pages/Home'));
 const About = lazy(() => import('../pages/About'));
+const Programs = lazy(() => import('../pages/Programs'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 // Loading component
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<PageLoader />}>
                         <About />
+                    </Suspense>
+                ),
+            },
+            {
+                path: 'programs',
+                element: (
+                    <Suspense fallback={<PageLoader />}>
+                        <Programs />
                     </Suspense>
                 ),
             },
