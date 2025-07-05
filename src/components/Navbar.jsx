@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import RiverRangerLogo from '/favicon.svg';
+import RiverRangerLogo from '../../public/pwa-192x192.png';
+
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

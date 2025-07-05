@@ -1,4 +1,4 @@
-import RiverRangerLogo from '/favicon.svg';
+import RiverRangerLogo from '../../public/pwa-192x192.png';
 
 export default function Footer() {
     return (
