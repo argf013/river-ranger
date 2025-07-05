@@ -7,7 +7,5 @@ import App from './App'
 // based on the configuration in vite.config.js
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <App />
 )
