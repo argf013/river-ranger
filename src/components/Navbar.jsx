@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import RiverRangerLogo from '../../public/favicon.svg';
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
                         <div className="flex flex-shrink-0 items-center">
                             <Link to="/" className="flex items-center gap-2">
                                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center">
-                                    <span className="text-white text-sm">🌊</span>
+                                    <img src={RiverRangerLogo} alt="River Ranger Logo" className="w-6 h-6" />
                                 </div>
                                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                                     River Ranger Jakarta
@@ -64,11 +65,10 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile menu dropdown */}
-                <div className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-                    isMobileMenuOpen 
-                        ? 'max-h-64 opacity-100' 
+                <div className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
+                        ? 'max-h-64 opacity-100'
                         : 'max-h-0 opacity-0'
-                }`}>
+                    }`}>
                     <div className="pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
                         <Link
                             to="/"

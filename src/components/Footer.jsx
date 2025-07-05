@@ -1,3 +1,5 @@
+import RiverRangerLogo from '../../public/favicon.svg';
+
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white" role="contentinfo">
@@ -6,7 +8,7 @@ export default function Footer() {
                     <div className="md:col-span-2">
                         <div className="flex items-center gap-2 mb-4">
                             <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center">
-                                <span className="text-white text-sm" role="img" aria-label="Wave emoji">🌊</span>
+                                <img src={RiverRangerLogo} alt="River Ranger Logo" className="w-6 h-6" />
                             </div>
                             <span className="text-xl font-bold">River Ranger Jakarta</span>
                         </div>
